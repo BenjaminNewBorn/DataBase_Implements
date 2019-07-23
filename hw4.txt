@@ -1,0 +1,27 @@
+release locks test: correct
+commit test: incorrect(-5)
+Exception on abort test (-5)
+null
+java.lang.NullPointerException
+	at hw4.BufferPool.getPage(BufferPool.java:90)
+	at hw1.hw4tests.testAbort(hw4tests.java:108)
+	at hw1.hw4tests.main(hw4tests.java:305)
+Exception on evict (-5)
+null
+java.lang.NullPointerException
+	at hw4.BufferPool.evictPage(BufferPool.java:282)
+	at hw4.BufferPool.addPageToBufferPool(BufferPool.java:126)
+	at hw4.BufferPool.getPage(BufferPool.java:81)
+	at hw1.hw4tests.testEvict(hw4tests.java:122)
+	at hw1.hw4tests.main(hw4tests.java:319)
+read locks test: correct
+lock upgrade test: correct
+write locks test: correct
+read then write test: incorrect(-5)
+write then read test: incorrect(-5)
+deadlock test: incorrect(-10)
+Total: 65 / 100
+
+It looks as though you didn't carefully check certain conditions relating to null pages being recieved or locks being requested
+in a particular order. It was your responsibility to implement locks on this assignment, so I'm pretty disappointed to see you 
+use the java library instead.

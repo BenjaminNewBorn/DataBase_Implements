@@ -1,0 +1,18 @@
+relation select test: correct
+relation project test: correct
+relation rename test: correct
+relation join test: correct
+relation aggregate test: correct
+relation group by test: correct
+query from test: correct
+query select test: correct
+query join test: correct
+query aggregate test: correct
+query group by test: correct
+query select all test: correct
+multi join query test: correct
+query as test: correct
+query order of operations test: correct
+Total: 100 / 100
+
+Fantastic job!

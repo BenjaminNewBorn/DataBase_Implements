@@ -1,0 +1,11 @@
+simple insert test: correct
+complex insert test: correct
+search test: correct
+Simple delete test: correct
+delete borrow test: correct
+delete remove level test: correct
+delete merge test: correct
+degree test: correct
+Total: 100 / 100
+
+Great job! Keep up the good work.
